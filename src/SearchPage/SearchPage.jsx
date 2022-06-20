@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import { debounce } from 'lodash';
-import { Spin, Pagination, Empty } from 'antd';
+import React, { Component } from "react";
+import { debounce } from "lodash";
+import { Spin, Pagination, Empty } from "antd";
 
-import FilmsList from '../FilmsList/FilmsList';
-import SearchInput from '../SearchInput/SearchInput';
-import './SearchPage.css';
-import 'antd/dist/antd.css';
-
-import Loading from '../services/Loading';
-import Error from '../services/Error';
+import FilmsList from "../FilmsList/FilmsList";
+import SearchInput from "../SearchInput/SearchInput";
+import "./SearchPage.css";
+import "antd/dist/antd.css";
+import Loading from "../services/Loading";
+import Error from "../services/Error";
 
 export default class SearchPage extends Component {
   state = {
-    searchText: 'return',
+    searchText: "return",
     page: 1,
   };
 
@@ -21,7 +20,7 @@ export default class SearchPage extends Component {
   };
 
   handleInput = (newSearchText) => {
-    if (newSearchText.trim() === '') return;
+    if (newSearchText.trim() === "") return;
     this.setState({
       searchText: newSearchText,
       page: 1,

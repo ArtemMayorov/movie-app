@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Menu } from 'antd';
-import 'antd/dist/antd.css';
-import './MainHeader.css';
+import React, { Component } from "react";
+import { Menu } from "antd";
+import "antd/dist/antd.css";
+import "./MainHeader.css";
 
 export default class MainHeader extends Component {
   state = {
-    selectedPage: 'search',
+    selectedPage: "search",
   };
 
   handleSelect = (page) => {
@@ -16,14 +16,14 @@ export default class MainHeader extends Component {
   render() {
     const menuItems = [
       {
-        key: 'search',
-        className: 'menu-item',
-        label: 'search',
+        key: "search",
+        className: "menu-item",
+        label: "search",
       },
       {
-        key: 'rated',
-        className: 'menu-item',
-        label: 'rated',
+        key: "rated",
+        className: "menu-item",
+        label: "rated",
       },
     ];
 

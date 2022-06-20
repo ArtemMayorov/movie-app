@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './SearchInput.css';
-import 'antd/dist/antd.css';
-import { Input } from 'antd';
+import React, { Component } from "react";
+import "./SearchInput.css";
+import "antd/dist/antd.css";
+import { Input } from "antd";
 
 export default class SearchInput extends Component {
   state = {
-    searchValue: '',
+    searchValue: "",
   };
 
   getInputValue(text) {

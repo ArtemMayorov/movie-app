@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Empty, Pagination } from 'antd';
+import React, { Component } from "react";
+import { Empty, Pagination } from "antd";
 
-import FilmServece from '../services/servece';
-import FilmsList from '../FilmsList/FilmsList';
+import FilmServece from "../services/servece";
+import FilmsList from "../FilmsList/FilmsList";
 
 export default class RatedPage extends Component {
   filmServece = new FilmServece();
@@ -43,7 +43,9 @@ export default class RatedPage extends Component {
     }
     return (
       <>
-        <FilmsList filmList={filmList.slice(this.state.minValue, this.state.maxValue)} />
+        <FilmsList
+          filmList={filmList.slice(this.state.minValue, this.state.maxValue)}
+        />
         <div className="searchPage-container">
           <Pagination
             total={filmList.length}
